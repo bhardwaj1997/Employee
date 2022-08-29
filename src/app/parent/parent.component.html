@@ -1,0 +1,20 @@
+<p>parent works!</p>
+<button (click)="markAllInStock()">Mark all as n stock</button>
+<hr>
+<app-child [childBookValue]="book1" #bookComp></app-child>
+<hr>
+<app-child [childBookValue]="book2" #bookComp1></app-child>
+<P>
+    <input type="text" #testing>
+</P>
+
+<button (click)="printBookInfo()">click to pass value to child</button>
+
+
+<button (click)="bookComp.testingReference(testing.value)">click to pass value to child</button>
+
+<hr>
+
+<app-child (test)="sendData($event)"></app-child>
+
+<h1>{{childData | uppercase }}</h1>

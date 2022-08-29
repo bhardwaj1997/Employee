@@ -1,0 +1,13 @@
+<p>child works!</p>
+
+<p>{{childBookValue.id}}</p>
+<p>{{childBookValue.name}}</p>
+<p>
+    <input type="checkbox"  [(ngModel)] = "childBookValue.inStock">
+</p>
+
+<h2>{{parentInputValue}}</h2>
+
+<input type="text" #newItem>
+
+<button (click)="sendDataToParent(newItem.value)">Cick TO Send Data to parent</button>

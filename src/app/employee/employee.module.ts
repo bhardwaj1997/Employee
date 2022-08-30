@@ -14,9 +14,11 @@ import {MatRadioModule} from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { LoginComponent } from './login/login.component';
 @NgModule({
-  declarations: [AddComponent, ListComponent],
+  declarations: [AddComponent, ListComponent, LoginComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -29,8 +31,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatRadioModule,
     ReactiveFormsModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
-  exports: [AddComponent],
+  exports: [AddComponent,ListComponent,LoginComponent],
 })
 export class EmployeeModule {}

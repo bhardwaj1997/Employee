@@ -1,0 +1,21 @@
+<mat-card id="container">
+    <mat-card-title align="center">Employee Login</mat-card-title>
+    <form [formGroup]="loginForm" fxLayout="column">
+        <mat-form-field class="loginId" appearance="fill">
+          <mat-label>EmailId/Mobile No.</mat-label>
+          <input matInput formControlName="loginId" placeholder="Enter Details">
+          <!-- <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+          <mat-hint align="end">{{message.value.length}} / 256</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field class="loginPassword" appearance="fill">
+            <mat-label>Enter Password</mat-label>
+            <input matInput formControlName="loginPassword" placeholder="Enter Password">
+            <!-- <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+            <mat-hint align="end">{{message.value.length}} / 256</mat-hint> -->
+          </mat-form-field>
+      </form>
+    <mat-card-actions align="end">
+      <button mat-raised-button>Login</button>
+      <button mat-raised-button>Cancel</button>
+    </mat-card-actions>
+  </mat-card>

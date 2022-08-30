@@ -21,8 +21,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
-  declarations: [AppComponent, ChildComponent, ParentComponent,
+  declarations: [AppComponent, ChildComponent, ParentComponent, HeaderComponent, FooterComponent,
   ],
   imports: [
     BrowserModule,
